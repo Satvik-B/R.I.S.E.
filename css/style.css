@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: #18d26e ;
   transition: 0.5s;
 }
 
@@ -793,7 +793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #1dd674;
+  background: #1dd674 !important;
 }
 
 #Register .btn-get-started:hover{
@@ -1724,3 +1724,6 @@ h2 {
   font-weight: bold;
 }
 	
+
+
+

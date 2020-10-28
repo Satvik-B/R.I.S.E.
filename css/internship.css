@@ -1,13 +1,137 @@
 body {
     overflow-x: hidden;
 }
+.row1 {
+    display: flex;
+    padding: 1vw;
+}
+
+.row2 {
+    display: flex;
+    padding: 1vw;
+}
+
+@media (max-width:768px) {
+    .row1 {
+        display: block;
+    }
+    .row2 {
+        display: block;
+    }
+}
+
+.my-card {
+    width: 100%;
+    padding: 40px auto;
+}
+
+.my-card-inner {
+    width: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-front {
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 1s;
+}
+
+.my-card:hover .my-card-inner {
+    transform: rotateX(180deg);
+}
+
+.card-back {
+    border-radius: 18px;
+    background-color: black;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: 1s;
+    width: 100%;
+    transform: rotateX(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+#p1 {
+    margin-top: 2.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#p2 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 4em;
+}
+
+#p3 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#p4 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#p5 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2.7em;
+    margin-bottom: 3em;
+}
+
+#p6 {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.btn-get-started{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 7px 32px;
+  border-radius: 59px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #1dd674 !important;
+}
+
+.btn-get-started:hover{
+  background: rgb(0, 0, 0);
+  color: #1dd674;
+}
+
+
 #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 20px 0 0px 0;
   position: relative;
 }
-
+#sasa{
+  margin: 0px;
+}
 #about::before {
   content: '';
   position: absolute;
@@ -519,3 +643,25 @@ color: #18d26e;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
+
+
+
+/*Register Section*/
+#Register .btn-get-started1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 7px 32px;
+    border-radius: 59px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    background: #1dd674 !important;
+  }
+
+  #Register .btn-get-started:hover{
+    background: rgb(0, 0, 0);
+    color: #1dd674;
+  }
