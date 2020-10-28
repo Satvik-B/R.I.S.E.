@@ -1724,6 +1724,16 @@ h2 {
   font-weight: bold;
 }
 	
-
+@media (min-width: 576px){
+    .modal-dialog{
+       max-width: 70%; 
+    }
+    .modal-header{
+    background-image: url(https://lh5.googleusercontent.com/AyH04nKm9-WS6v49cuTi0d3R0qN8WmgLsZCzWTGARMwum53r2P2MhvtxEIeBMsOP0fqovwx0wH97aG22Y1jJsL97VXYXs_52NAT5GlGjNjKKJ4rd1aplB_5B5F1g=w1200);
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+}
 
 
